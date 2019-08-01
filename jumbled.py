@@ -20,7 +20,7 @@ def createWordList(chrs):
     print ('\n[i] End time: %s' % time.strftime('%H:%M:%S'))
     print("started -- init.py ")
     os.system("sort  output/wordlist.txt > output/sortlist.txt")
-    os.system("init.py")
+    os.system("init2.py")
 if __name__ == '__main__':
     parser = argparse.ArgumentParser(
         formatter_class=argparse.RawTextHelpFormatter,
