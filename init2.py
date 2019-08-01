@@ -5,10 +5,8 @@ def check(get,list,x,hell):
     for c in list:
         if get[0] == c:
             pos = list.index(c)
-            pos1 = lines[pos]
-            pos2 = lines[pos+1]
+            pos1,pos2 = lines[pos],lines[pos+1]
             hell = hell[pos1:pos2]
-            
             for yell in hell:
                 if yell == get:
                     print(yell,time.strftime('%H:%M:%S'))
