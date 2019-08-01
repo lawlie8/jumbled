@@ -2,7 +2,7 @@ import sys
 import os
 import time
 x = open('words_alpha.txt')
-y = open('output\\wordlist.txt')
+y = open('output\\sortlist.txt')
 hell = x.readlines()
 there = y.readlines()
 for get in there:

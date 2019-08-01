@@ -4,13 +4,21 @@ import time
 
 
 def check(get,list,x,hell):
+    x = open('words_alpha.txt')
+    hell = x.readlines()
     for c in list:
         if get[0] == c:
             pos = list.index(c)
-            pos = lines[pos-1]
-            
-            x = open('words_alpha.txt')
-            hell = hell[pos:]
+            pos1 = lines[pos]
+            pos2 = lines[pos+1]
+            #x = open('words_alpha.txt')
+            hell = hell[pos1:pos2]
+    for yell in hell:
+            #for i in range(0,len(hell)):
+        #yell = hell[i]
+        #print(yell[0])
+        if yell == get:
+            print(yell,time.strftime('%H:%M:%S'))
 
 x = open('words_alpha.txt')
 y = open('output\\wordlist.txt')
@@ -23,7 +31,4 @@ lines = [1, 25418, 43831, 75937, 94670, 108867, 120760, 131713, 145456, 159798, 
 
 for get in there:
     check(get,list,x,hell)
-    for yell in hell:
-        if yell == get:
-            print(yell,time.strftime('%H:%M:%S'))
 print('Process completed at',time.strftime('%H:%M:%S'))
