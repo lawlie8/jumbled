@@ -18,7 +18,7 @@ def createWordList(chrs):
         sys.stdout.flush()
     output.close()
     print ('\n[i] End time: %s' % time.strftime('%H:%M:%S'))
-    print("started -- init.py ")
+    print("started -- init2.py ")
     os.system("sort  output/wordlist.txt > output/sortlist.txt")
     try:
         os.system("init2.py")
